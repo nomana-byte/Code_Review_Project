@@ -1,0 +1,7 @@
+# Refactoring Decisions
+
+The original Python script used general function names such as `do_math_stuff` and `do_string_stuff`, along with unclear variable names such as `x`, `s`, and `list1`. I replaced them with descriptive names, including `process_numbers`, `process_strings`, `numbers`, and `strings`. These names make the purpose of each function and variable easier to understand. I also added docstrings to all functions to explain their purpose, parameters, and return values. This improves maintainability and helps other developers understand the code without needing additional explanations.
+
+I refactored both processing functions using list comprehensions and conditional expressions. The number-processing function doubles even numbers and triples odd numbers. The string-processing function converts words longer than five characters to uppercase and shorter words to lowercase. The `join()` method combines the processed words with spaces, replacing repeated string concatenation. These changes make the code shorter and easier to read while preserving its original behavior. The program produces the same output as the starter script.
+
+The `main()` function now uses meaningful variable names and clearly separates the input data, processing steps, and output. I retained the `if __name__ == "__main__":` condition so the program runs directly while remaining importable as a module. Overall, the refactoring improves readability, documentation, and maintainability without changing the program's intended functionality.
